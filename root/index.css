@@ -12,21 +12,25 @@
    To fix this, applied .filter-background to the columns of the background image
    and then used backdrop-filter */
 
-#row-1 {
+#container-row-1 {
     margin-top: 80px;
     margin-bottom: 100px;
 }
 
-#row-2 {
+#container-row-2 {
     margin-bottom: 100px;
 }
 
-#row-3 h2{
+#container-row-3 h2{
     margin-top: 80px;
 }
 
-#row-4 h2{
+#container-row-4 h2{
     margin-top: 30px;
+}
+
+.background-image-2 h2 {
+    margin-top: 50px;
 }
 
 .filter-background {
@@ -89,6 +93,12 @@
     height: 800px;
 }
 
+.background-image-2 {
+    background-image: url(https://2577343.fs1.hubspotusercontent-na1.net/hub/2577343/hubfs/Brand2Files/Untitled%20design%20%2829%29.png?width=2880&name=Untitled%20design%20%2829%29.png);
+    background-position: center;
+    height: 800px;
+}
+
 .button {
     background-color: #007FFF;
     width: 120px;
@@ -147,4 +157,9 @@ a {
 img {
     width: 100%;
     height: 100%;
+}
+
+video {
+    width: 100%;
+    margin-top: 50px;
 }
