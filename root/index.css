@@ -1,32 +1,14 @@
-nav {
-    position: fixed;
-    border: solid; 
-}
 
-main {
-    position: relative;
-    top: 100px;
-}
-
-h2 {
-    text-align: center;
-    margin-top: 300px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 40px;
-    color: white;
-}
-
-p {
+#picture-paragraph {
     text-align: center;
     color: white;
-    /* backdrop-filter: brightness(70%) grayscale(10%) contrast(80%); */
+    margin-bottom: 100px;
 }
 
-a {
-    text-decoration: none;
+#italic-paragraph {
+    text-align: center;
+    font-style: italic;
 }
-
 /* Applying filter on .background-image was applying the filters to the text on top
    To fix this, applied .filter-background to the columns of the background image
    and then used backdrop-filter */
@@ -34,14 +16,14 @@ a {
     backdrop-filter: brightness(70%) grayscale(10%) contrast(80%);
 }
 
-.logo{
+.logo {
     height: 50px;
     width: 125px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.navbar-nav{
+.navbar-nav {
     position: relative;
 }
 
@@ -60,7 +42,7 @@ a {
     height: 800px;
 }
 
-.button{
+.button {
     background-color: #007FFF;
     width: 120px;
     height: 45px;
@@ -78,4 +60,40 @@ a {
 
 .row {
     
+}
+
+nav {
+    position: fixed;
+}
+
+main {
+    position: relative;
+    top: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    /* backdrop-filter: brightness(70%) grayscale(10%) contrast(80%); */
+}
+
+a {
+    text-decoration: none;
 }
