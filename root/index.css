@@ -119,7 +119,7 @@
     border: solid;  
     border-color: #E0E0E0; 
     border-width: .5px;
-    /* box-shadow: 10px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .testimonial-picture {
@@ -143,7 +143,7 @@
 }
 
 .about-heading {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .blue-row {
@@ -179,6 +179,10 @@
     width: 150px;
 }
 
+.blue-text {
+    color:#007FFF
+}
+
 nav {
     position: fixed;
 }
@@ -204,6 +208,14 @@ h2 {
 
 h3, h5{
     text-align: center;
+    font-weight: bold;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+h7 {
     font-weight: bold;
 }
 
@@ -233,10 +245,6 @@ footer {
 footer img {
     height: 85px;
     width: 210px;
-}
-
-footer h7 {
-    font-weight: bold;
 }
 
 footer p {
