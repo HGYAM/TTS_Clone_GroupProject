@@ -1,3 +1,4 @@
+/* Paragraph in top background picture*/
 #picture-paragraph {
     text-align: center;
     color: white;
@@ -7,61 +8,31 @@
     text-align: center;
     font-style: italic;
 }
-/* Applying filter on .background-image was applying the filters to the text on top
-   To fix this, applied .filter-background to the columns of the background image
-   and then used backdrop-filter */
 
-#container-row-1 {
-    margin-top: 80px;
-    margin-bottom: 100px;
+/* Background image behind video */
+.video-background {
+    background-image: url(https://2577343.fs1.hubspotusercontent-na1.net/hub/2577343/hubfs/Brand2Files/Untitled%20design%20%2829%29.png?width=2880&name=Untitled%20design%20%2829%29.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#container-row-2 {
-    margin-bottom: 100px;
-}
-
-#container-row-3 h3{
-    margin-top: 60px;
-}
-
-#container-row-4 h3{
-    margin-top: 30px;
-}
-
-.background-image-2 h2 {
+.video-background h2 {
     margin-top: 50px;
 }
 
+/* Applying filter on .background-image was applying the filters to the text on top
+   To fix this, applied .filter-background to the columns of the background image
+   and then used backdrop-filter */
 .filter-background {
     backdrop-filter: brightness(70%) grayscale(10%) contrast(80%);
 }
 
-.row-3-button {
-    background-color: #0d62ff;
-    width: 120px;
-    height: 45px;
-    margin-right: auto;
-    text-align: center;
-    padding-top: .6em;
-    border-radius: 3px;
-    color: white;
-}
-
-.row-4-text {
+.right-text {
     text-align: right;
 }
 
-.row-4-button {
-    background-color: #0d62ff;
-    width: 120px;
-    height: 45px;
-    margin-left: auto;
-    text-align: center;
-    padding-top: .6em;
-    border-radius: 3px;
-    color: white;
-}
-
+/* TTS logo in nav bar */
 .logo {
     height: 50px;
     width: 125px;
@@ -69,30 +40,19 @@
     margin-bottom: 10px;
 }
 
-.container-fluid {
-    margin: 0;    
-}
-
+/* Background image at top of page */
 .background-image {
     background-image: url(https://2577343.fs1.hubspotusercontent-na1.net/hub/2577343/hubfs/new%20website%20hero%20background%20image%20%281%29.png?width=2880&name=new%20website%20hero%20background%20image%20%281%29.png);
     background-position: center;
     height: 800px;
 }
 
-.background-image-2 {
-    background-image: url(https://2577343.fs1.hubspotusercontent-na1.net/hub/2577343/hubfs/Brand2Files/Untitled%20design%20%2829%29.png?width=2880&name=Untitled%20design%20%2829%29.png);
-    background-position: center;
-    height: 800px;
-    background-repeat: no-repeat;
-}
-
 .button {
     background-color: #0d62ff;
     width: 120px;
     height: 45px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
+    padding-top: .6em;
     border-radius: 3px;
     color: white;
 }
@@ -101,9 +61,17 @@
     filter: brightness(110%)
 }
 
+/* div with circular picture sitting on top border */
 .testimonial {
     margin-top: 80px;
     margin-bottom: 150px;
+    border: solid;  
+    border-color: #E0E0E0; 
+    border-width: .5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .testimonial-top-text {
@@ -124,17 +92,7 @@
     line-height: 1.5rem;
 }
 
-.testimonial-text-div {
-    border: solid;  
-    border-color: #E0E0E0; 
-    border-width: .5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 350px;
-    margin: auto;
-}
-
 .testimonial-picture {
-    /* top: 3em; */
     bottom: 2.5em;
     left: 2.5em;  
     width: 5%;
@@ -155,13 +113,7 @@
     margin-top: 40px;
 }
 
-.blue-row {
-    background-color: #0d62ff;
-    margin-top: 50px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-}
-
+/* Styling for social media icons in footer*/
 .fa {
     margin-top: 40px;
     margin-right: 10px;
@@ -169,17 +121,18 @@
     color: #A9A9A9
 }
 
+.blue-row {
+    background-color: #0d62ff;
+}
+
 .blue-row h5, .blue-row p {
     color: white;
-    margin-left: 100px;
 }
 
 .blue-row .button {
-    margin-top: 10px;
     border: solid;
     border-width: .5px;
     border-color: white;
-    margin-right: 100px;
     width: 150px;
 }
 
@@ -257,40 +210,17 @@ footer p {
     font-size: 80%;
 }
 
-@media only screen and (max-width: 768px){
+/* When screen gets to 766px or less 
+h1 heading doesn't shoot up towards the top
+and the text in the blue row at the bottom aligns center */
+@media only screen and (max-width: 766px){
     h1 {
-        margin-top: 100px;
+        margin-top: 150px;
     }
-    .row-4-button{
-        margin-bottom: 30px;
+
+    .blue-row h5, .blue-row p {
+        color: white;
+        text-align: center;
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1398px) {
-    #container-row-3 h2{
-        margin-top: 40px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1198px) {
-    #container-row-3 h2{
-        margin-top: 0px;
-    }
-
-    #container-row-4 img {
-        margin-top: 3em;
-        
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 990px){
-    #container-row-3 img {
-        margin-top: 5em;
-        
-    }
-
-    #container-row-4 img {
-        margin-top: 9em;
-        
-    }
-}
